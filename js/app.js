@@ -8,8 +8,13 @@ BasicForm = {
   handleFormSubmit: function() {
     document.querySelector('form').onsubmit = function(event) {
       var list = BasicForm.buildListItem(event.target);
-      var details = document.querySelector('.details');    
+      var details = document.querySelector('.details');
+      if (!details) {
+        details = document.createElement('div');
+        details.className = 'details';
+      }
       details.appendChild(list);
+      document.querySelector('section').appendChild(details);
       event.target.reset();
       event.preventDefault();
     }

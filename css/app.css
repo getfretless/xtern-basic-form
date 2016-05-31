@@ -34,7 +34,7 @@ dl:nth-of-type(even) {
     width: 40%;
   }
 
-  section > div::after {
+  section::after {
     clear: both;
     content: "";
     display: table;
