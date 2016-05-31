@@ -1,0 +1,71 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <div class="row">
+      <div class="small-10 small-offset-1 medium-5 columns">
+        <form action="" method="post">
+          <div class="row">
+            <div class="medium-12 columns">
+              <label>Name</label>
+              <input type="text" name="name" placeholder="Your Name" required />
+            </div>
+            <div class="medium-12 columns">
+              <label>Hair Color</label>
+              <input type="color" name="color" required />
+            </div>
+            <div class="medium-12 columns">
+              <label>Age</label>
+              <input type="number" name="age" placeholder="Your Age" required />
+            </div>
+            <div class="medium-12 columns">
+              <label>Birthplace</label>
+              <input type="text" name="birthplace" placeholder="Where were you born?" required />
+            </div>
+          </div>
+          <button class="button success expanded">Submit</button>
+        </form>
+      </div>
+      <div class="small-11 medium-5 columns">
+        <div class="row details">
+          <div class="medium-12 columns">
+            <dl>
+              <dt>Name:</dt>
+              <dd>Alex Overbeck</dd>
+              <dt>Hair Color:</dt>
+              <dd>#000000</dd>
+              <dt>Age:</dt>
+              <dd>28</dd>
+              <dt>Birthplace:</dt>
+              <dd>Remington, IN.</dd>
+            </dl>
+          </div>
+          <div class="medium-12 columns">
+            <dl>
+              <dt>Name:</dt>
+              <dd>Dave Strus</dd>
+              <dt>Hair Color:</dt>
+              <dd>#000000</dd>
+              <dt>Age:</dt>
+              <dd>30</dd>
+              <dt>Birthplace:</dt>
+              <dd>Not Remington, IN.</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
